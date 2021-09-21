@@ -1,1 +1,24 @@
-<p>registro-insumos works!</p>
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Identificacion del contrato</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="insumo.idContrato" [ngModelOptions]="{standalone: true}" class="form-control" />
+    <div id="emailHelp" class="form-text">Ingrese con valores numericos y sin espacios.</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+    <input type="text" class="form-control" name="description" aria-describedby="emailHelp" [(ngModel)]="insumo.descripcionProducto" [ngModelOptions]="{standalone: true}" class="form-control">
+    <div  class="form-text">Ingrese descripcion del producto.</div>
+    <br>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Valor del producto</label>
+    <input type="number" class="form-control" name="title" aria-describedby="emailHelp" [(ngModel)]="insumo.valorProducto" [ngModelOptions]="{standalone: true}" class="form-control">
+    <div  class="form-text">Ingrese con valores numericos y sin espacios.</div>
+    <br>
+  </div>
+  <br><br><br>
+
+  <button type="submit" class="btn btn-primary" (click)="add()">Registrar</button>
+</form>

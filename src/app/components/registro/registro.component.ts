@@ -20,7 +20,7 @@ export class RegistroComponent implements OnInit {
 
       this.contratoService.post(this.contrato);
       alert('Se agegro un nuevo contrato' + JSON.stringify(this.contrato));
-    
+
   }
 
   validar(): Boolean{

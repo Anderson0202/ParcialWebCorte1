@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConsultaComponent } from './components/consulta/consulta.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { RegistroInsumosComponent } from "./components/registro-insumos/registro-insumos.component";
 import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
@@ -10,8 +11,12 @@ const routes: Routes = [
     component:RegistroComponent
   },
   {
-    path: 'Consulta',
-    component: ConsultaComponent
+    path: 'Registro',
+    component:RegistroComponent
+  },
+  {
+    path: 'RegistroInsumo',
+    component: RegistroInsumosComponent
   }
 ];
 
