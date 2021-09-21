@@ -1,12 +1,12 @@
-<ul class="listul">
-  <a href="index.html">
-    <li>Inicio</li>
-  </a>
 
-  <a href="consulta/consulta.html">
-    <li class="btnConsultar">Consultar</li>
-  </a>
-  <a href="registro/registro.html">
-    <li class="btnRegistrar">Registrar</li>
-  </a>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+  </li>
+  <li class="nav-item" [routerLinkActive]="['link-activate']">
+    <a class="nav-link" [routerLink]="['/Registro']">Registrar</a>
+  </li>
+  <li class="nav-item" [routerLinkActive]="['link-activate']">
+    <a class="nav-link" [routerLink]="['/Consulta']">Consultar</a>
+  </li>
 </ul>

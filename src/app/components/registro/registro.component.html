@@ -1,0 +1,26 @@
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">identificacion del contrato</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="contrato.idContrato" [ngModelOptions]="{standalone: true}" class="form-control" />
+    <div id="emailHelp" class="form-text">Ingrese con valores numericos y sin espacios.</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Valor del contrato</label>
+    <input type="email" class="form-control" aria-describedby="emailHelp" [(ngModel)]="contrato.valorContrato" [ngModelOptions]="{standalone: true}" class="form-control">
+    <div  class="form-text">Ingrese con valores numericos y sin espacios.</div>
+    <br>
+  </div>
+
+  <div>
+    <label>Tipo de suministro</label><br>
+    <select name="genero" id="suministroSeleccionado" placeholder="SELECCIONE" [(ngModel)]="contrato.tipoSuministro" class="form-control">
+      <option>Equipos</option>
+      <option>Productos de aseo</option>
+      <option>Papeleria</option>
+    </select>
+  </div>
+    <br><br><br>
+
+  <button type="submit" class="btn btn-primary" (click)="add()">Registrar</button>
+</form>
